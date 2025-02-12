@@ -33,7 +33,7 @@ public class BuyTicketService2 {
 	 */
 	
 	// 1. 선언적 방법
-	//@Transactional(propagation=Propagation.REQUIRES)
+	//@Transactional(propagation=Propagation.REQUIRED)
 	@Transactional(propagation=Propagation.REQUIRES_NEW)
 	public int buy(String consumerId, int amount, String error) {
 
